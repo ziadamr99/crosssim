@@ -54,7 +54,7 @@ git submodule update --progress
 This command downloads about 1.2GB of data for the two repositories (combined), which is then de-compressed. After cloning the submodules, you can test CrossSim Inference by running the following commands:
 ```
 cd applications/dnn/inference
-python run_inference.py
+python3 run_inference.py
 ```
 This will run a CrossSim Inference simulation using a simple CNN and the MNIST dataset by default. The use of the run_inference.py script is explained in more detail in Chapter 3 of the [manual](https://github.com/sandialabs/cross-sim/blob/main/docs/CrossSim_Inference_manual_v2.0.pdf). Example scripts to perform inference are in the ``inference`` directory and described in the same chapter of the manual. If you are interested in benchmarking large neural networks, a CUDA-capable GPU is recommended.
 
